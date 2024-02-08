@@ -1,0 +1,122 @@
+.alphabet{
+    background-color: rgb(10, 92, 124);
+    text-decoration: none;
+    font-size: larger;
+}
+.alphabet > a{
+    text-decoration: none;
+    font-style: normal;
+    color: antiquewhite;
+}
+.alphabet > a:hover{
+    color: aqua;
+}
+.section{
+    background-color: rgb(10, 92, 124);
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    /*
+    position: -webkit-sticky;
+    position: sticky;
+    top: 9vh;
+    */
+    display: block;
+}
+.section > a{
+    text-decoration: none;
+    font-style: normal;
+    color: antiquewhite;
+}
+.section > a:hover{
+    color: aqua;
+}
+.topQC{
+    padding-top: 8vh;
+    padding-bottom: .5vh;
+    font-size: 5vw;
+    padding-left: 45vw;
+    background-color: #296074;
+    color:antiquewhite;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -9vh;
+}
+.topQC > h1{
+    color: antiquewhite;
+}
+.sectionBut{
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    float: left;
+    margin-left: 15vw;
+    width: 20vw;
+    background-color: darkcyan;
+    display: none;
+}
+.sectionBut:active{
+    background-color: rgb(13, 132, 153);
+}
+.sectionBut:active > .section{
+    display: block;
+}
+
+
+
+.footerQ{
+    position: relative;
+    bottom: 0px;
+}
+#quiet{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 93vh;
+    width: 100%;
+    margin-left: 0vw;
+    bottom: 0px;
+    background-color: black;
+    
+    
+}
+#quiet.td{
+    background-color: black;
+    text-decoration: none;
+}
+#quiet.th{
+    background-color: black;
+    text-decoration: none;
+    width: 100%;
+}
+#quiet.tr{
+    background-color: black;
+    text-decoration: none;
+}
+
+
+
+
+table{
+    margin-left: 2%;
+    margin-top: 2%;
+    width: 96%;
+    display: block;
+    
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    padding: 0%;
+    text-align: center;
+    font-size: large;
+}
+th{
+    background-color: #ADD8E6;
+}
+td{
+    padding: 5px;
+    background-color: azure;
+}
+

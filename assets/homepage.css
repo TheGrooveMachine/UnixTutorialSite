@@ -1,0 +1,245 @@
+
+/* This CSS is only for the homepage */
+
+/* ---------------------- Custom Colors ---------------------- */
+:root {
+    --zimaBlue: #16b8f3e6; 
+    --grayBlue: #296074;
+    --blueWhite: #ecf2f5;
+}
+
+
+/* ---------------------- Hero Section ---------------------- */
+div#hero {
+    display: flex;
+    background-position-y: -120px;
+    height: 700px;
+    align-items: center;
+    justify-content: center;
+}
+
+div#hero h1 {
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+/* ---------------------- About Us ---------------------- */
+div#about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3rem;
+}
+
+div#about h1{
+    margin-bottom: 1rem;
+}
+
+div#about p {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ---------------------- All Section Titles ---------------------- */
+div.titleBox {
+    background-color: var(--zimaBlue);
+    margin-top: 5rem;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+div.titleBox h1 {
+    color: var(--blueWhite);
+    margin-left: 10vw;
+}
+
+/* ---------------------- Quick Check ---------------------- */
+div#quickCheck {
+    background: linear-gradient(0deg, rgba(35, 77, 93, 0.7), rgba(35, 77, 93, 0.9)), url(images/css_1.jpg);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#quickCheck p {
+    width: 80vw;
+    text-align: center;
+    color: var(--blueWhite);
+    margin-top: 60px;
+}
+
+div#quickCheck a {
+    width: 15rem;
+    height: 4rem;
+    display: flex;
+    color: var(--blueWhite);
+}
+
+div#quickCheck h1:not(div.titleBox h1){
+    font-size: 36px;
+    margin: 0;
+}
+
+/* ---------------------- What is UNIX? ---------------------- */
+div#whatIs {
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#whatIs>div:last-child {
+    display: flex;
+    width: 70vw;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+div#whatIs>div:last-child div {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div#whatIs img {
+    height: 25rem;
+    width: 30vw;
+    object-fit: cover;
+}
+
+div#whatIs h1:not(div.titleBox h1){
+    font-size: 36px;
+}
+
+/* ---------------------- Tutorials ---------------------- */
+div#tutorials {
+    background-image: url(images/keyboard_3.jpg);
+    background-size: cover;
+    height: 600px;
+    background-position-y: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#tutorials ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    list-style-type: none;
+    margin: 5rem 0;
+    justify-content: space-evenly;
+}
+
+div#tutorials ul a {
+    margin: 1rem 0.5rem;
+    background-color: var(--grayBlue);
+    width: 20rem;
+    height: 5rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div#tutorials h1:not(div.titleBox h1){
+    color: var(--blueWhite);
+    font-size: 36px;
+}
+
+
+
+
+/* ------------------------- Responsive ------------------------- */
+@media only screen and (max-width: 1359px) {
+    div#hero {
+        background-position-y: 0px;
+    }
+
+    div#whatIs {
+        height: 750px;
+    }
+
+    div#whatIs>div:last-child{
+        width: 75vw;
+    }
+
+    div#whatIs>div:last-child div {
+        width: 40vw;
+    }
+
+    div#whatIs img {
+        height: 30rem;
+        width: 20rem;
+    }
+}
+
+@media only screen and (max-width: 1019px) {
+    div#hero h1{
+        font-size: 30px;
+        letter-spacing: 0.5rem;
+    }
+
+    div#whatIs {
+        height: 1400px;
+    }
+
+    div#whatIs>div:last-child{
+        width: 75vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#whatIs>div:last-child div {
+        width: 100%;
+        text-align: center;
+    }
+
+    div#whatIs img {
+        height: 70vw;
+        width: 60vw;
+        margin-top: 3rem;
+    }
+}
+
+@media only screen and (max-width: 919px) {
+    div#hero h1{
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+
+    div#whatIs {
+        height: 1300px;
+    }
+}
+
+@media only screen and (max-width: 819px) {
+    div#tutorials {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 809px) {
+
+    div#whatIs {
+        height: 1200px;
+    }
+
+    div#tutorials {
+        height: 1200px;
+    }
+}
+
+@media only screen and (max-height: 900px) {
+    div#hero {
+        background-position-y: 0px;
+        height: 400px;
+    }
+}

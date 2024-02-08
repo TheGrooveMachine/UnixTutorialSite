@@ -1,0 +1,276 @@
+/* This main CSS should be use universally across all pages */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ---------------------- Custom Colors ---------------------- */
+:root {
+    --zimaBlue: #16b8f3e6; 
+    --grayBlue: #296074;
+    --blueWhite: #ecf2f5;
+}
+
+
+/* ---------------------- Default Style ---------------------- */
+body {
+    background-color: var(--blueWhite);
+    margin: 0;
+    margin-top: 0;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 500;
+    color: var(--grayBlue);
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 500;
+    color: var(--grayBlue);
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--grayBlue);
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+
+a {
+    font-family: 'Share Tech', sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* ---------------------- Top Menu Bar ---------------------- */
+div.topmenu {
+    background-color: rgba(35, 77, 93, 0.9);
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+}
+
+/* -- Logo -- */
+a.logo img {
+    width: 60px;
+    margin-left: 40px;
+}
+
+/* -- Menu -- */
+div.topmenu ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 100px;
+}
+
+div.topmenu ul a {
+    color: var(--blueWhite);
+    font-size: 25px;
+    margin-right: 5px;
+    background-color: #16b8f300;
+    padding: 25px 30px;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 0;
+}
+
+div.topmenu ul a:hover {
+    background-color: var(--zimaBlue);
+}
+
+a#currentPage {
+    color: var(--zimaBlue);
+    background-color: var(--blueWhite);
+}
+
+div.topmenu ul ul {
+    display: none;
+    position: absolute;
+    padding: 0.5em 0 1em 0;
+    background-color: rgba(35, 77, 93, 0.9);
+}
+
+div.topmenu ul ul a {
+    margin: 13px;
+    padding: 15px 25px;
+}
+
+div.topmenu li:hover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 250px;
+    top: 84px;
+    margin-left: -50px;
+}
+
+
+
+/* ---------------------- Mobile Menu ---------------------- */
+nav.menu {
+    background: linear-gradient(0deg, #ecf2f5da, #ecf2f5da), url(/assets/images/workspace.jpg);
+    background-size: cover;
+    display: none;
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    z-index: 1;
+}
+
+nav.menu ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30rem;
+    margin-top: 15vh;
+}
+
+nav.menu li a {
+    font-family: 'Share Tech', sans-serif;
+    font-size: 36px;
+    color: #5C5C5C;
+}
+
+/* -- Menu Toggle -- */
+div#hamburger {
+    display: none;
+    position: fixed;
+    color: var(--blueWhite);
+    right: 60px;
+}
+
+div#hamburger input {
+    display: none;
+}
+
+div#hamburger label {
+    cursor: pointer;
+}
+
+div#hamburger span {
+    background-color: var(--blueWhite);
+    display: block;
+    width: 33px;
+    height: 3px;
+    margin-bottom: 7px;
+}
+
+div#hamburger span#span1 {
+    transform: rotate(0) translate(0, 0);
+}
+
+div#hamburger span#span2 {
+    transform: scale(1, 1);
+}
+
+div#hamburger span#span3 {
+    
+    transform: rotate(0) translate(0, 0);
+}
+
+
+/* ---------------------- Title Section ---------------------- */
+div#hero {
+    background-image: url(images/workspace.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+}
+
+div#hero h1 {
+    color: var(--blueWhite);
+    letter-spacing: 0.5rem;
+    padding: 15px 60px;
+    background-color: var(--zimaBlue);
+    margin-left: 120px;
+    margin-bottom: 40px;
+}
+
+/* ---------------------- Footer ---------------------- */
+div.footer {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.footer h1{
+    margin-left: 10vw;
+    color: white;
+}
+
+div.footer p{
+    margin-left: 10vw;
+    color: white;
+}
+
+div.footer a {
+    text-decoration: none;
+    color: var(--blueWhite);
+    font-size: 30px;
+}
+
+ .linksQuiz{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 500;
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+    display: block;
+    margin: 1em;
+
+}
+
+.linksQuiz:hover{
+    background-color: #16b8f3e6;
+    color: white;
+    border-radius: 15px;
+} 
+
+ 
+
+/* ---------------------- Responsive ---------------------- */
+
+@media only screen and (max-width: 1019px) {
+    div.topmenu ul {
+        display: none;
+    }
+
+    div#hamburger {
+        display: inline;
+    }
+
+    div#hero {
+        background-position-y: 0;
+        justify-content: center;
+    }
+
+    div#hero h1 {
+        margin-left: 0;
+        padding: 15px 40px;
+    }
+
+    
+}
+
+

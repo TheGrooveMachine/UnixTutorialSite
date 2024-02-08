@@ -1,0 +1,87 @@
+/* This main CSS should be use universally across all pages */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* ---------------------- Default Style ---------------------- */
+body {
+    background-color: #ecf2f5;
+    margin: 0;
+    margin-top: 0;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 500;
+    color: #296074;
+    font-size: 40px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #296074;
+    font-size: 20px;
+    line-height: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ---------------------- Top Section ---------------------- */
+div.top {
+    display: flex;
+    position: fixed;
+    width: 90vw;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+}
+
+/* -- Logo -- */
+a.logo img {
+    width: 60px;
+    margin: 40px;
+}
+
+/* -- Social Medias -- */
+nav.social {
+    display: flex;
+    width: 170px;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 8px 12px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #16b8f3e1, #028cd4e1 ,#075c83e1);
+}
+
+nav.social a img {
+    width: 30px;
+}
+
+/* ---------------------- Footer ---------------------- */
+div.footer {
+    height: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.footer h1{
+    margin-left: 10vw;
+    color: white;
+}
+
+
+div.footer p{
+    margin-left: 10vw;
+    color: white;
+    
+}
+
